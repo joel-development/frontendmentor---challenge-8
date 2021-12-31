@@ -2,12 +2,14 @@
 {
   position: absolute;
   top: 0;
+  z-index: 20;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   width: 100%;
+  height: 100px;
 
   .toggle
   {
@@ -19,7 +21,6 @@
   position: absolute;
   top: 100px;
   right: 20px;
-  z-index: 10;
 
   display: flex;
   justify-content: center;
@@ -30,12 +31,14 @@
   width: 300px;
   padding: 30px;
 
-  transform: translateX(400px);
+  background-color: $color-menu;
+
+  transform: translateY(-400px);
   transition: .3s ease-in transform;
   
   &--on
   {
-    transform: translateX(0);
+    transform: translateY(0);
   }
   
   ul
@@ -88,6 +91,7 @@
   }
   .menu
   {
+    background-color: transparent;
     &::before
     {
       display: none;

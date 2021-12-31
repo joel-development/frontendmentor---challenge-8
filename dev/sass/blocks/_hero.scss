@@ -1,0 +1,50 @@
+.hero
+{
+  position: relative;
+  z-index: 10;
+  background-image: url(../assets/images/mobile/image-header.jpg);
+  background-size: cover;
+  background-position: center;
+  
+  padding-top: 100px;
+  height: 100vh;
+  
+  .main-title
+  {
+    padding: 75px 0;
+    font-size: 3em;
+    font-family: $font-title;
+    text-align: center;
+    color: $color-hero;
+  }
+}
+
+.arrow
+{
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(../assets/images/icon-arrow-down.svg);
+
+  bottom: 200px;
+  width: 100%;
+  height: 150px;
+}
+
+@media screen and (min-width: 860px) {
+  .hero
+  {
+    background-image: url(../assets/images/desktop/image-header.jpg);
+
+    .main-title
+    {
+      margin: 75px 0;
+      font-size: 4em;
+    }
+  }
+  .arrow
+  {
+    bottom: 275px;
+  }
+}

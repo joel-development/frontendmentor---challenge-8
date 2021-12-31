@@ -348,6 +348,11 @@ template {
 body {
   font-size: 18px;
   font-family: "Barlow", sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 0;
 }
 
 ul {
@@ -379,11 +384,13 @@ ul {
 .top-bar {
   position: absolute;
   top: 0;
+  z-index: 20;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   width: 100%;
+  height: 100px;
 }
 .top-bar .toggle {
   cursor: pointer;
@@ -393,7 +400,6 @@ ul {
   position: absolute;
   top: 100px;
   right: 20px;
-  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -402,11 +408,12 @@ ul {
   max-width: 100%;
   width: 300px;
   padding: 30px;
-  transform: translateX(400px);
+  background-color: #ffffff;
+  transform: translateY(-400px);
   transition: 0.3s ease-in transform;
 }
 .menu--on {
-  transform: translateX(0);
+  transform: translateY(0);
 }
 .menu ul {
   display: flex;
@@ -445,6 +452,7 @@ ul {
   }
 
   .menu {
+    background-color: transparent;
     position: initial;
     flex-direction: row;
     gap: 20px;
@@ -462,6 +470,47 @@ ul {
   }
   .menu .button {
     background-color: #ffffff;
+  }
+}
+.hero {
+  position: relative;
+  z-index: 10;
+  background-image: url(../assets/images/mobile/image-header.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  height: 100vh;
+}
+.hero .main-title {
+  padding: 75px 0;
+  font-size: 3em;
+  font-family: "Fraunces", serif;
+  text-align: center;
+  color: #ffffff;
+}
+
+.arrow {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(../assets/images/icon-arrow-down.svg);
+  bottom: 200px;
+  width: 100%;
+  height: 150px;
+}
+
+@media screen and (min-width: 860px) {
+  .hero {
+    background-image: url(../assets/images/desktop/image-header.jpg);
+  }
+  .hero .main-title {
+    margin: 75px 0;
+    font-size: 4em;
+  }
+
+  .arrow {
+    bottom: 275px;
   }
 }
 

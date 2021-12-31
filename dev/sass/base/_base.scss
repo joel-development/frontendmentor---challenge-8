@@ -6,6 +6,11 @@ body
 {
   font-size: 18px;
   font-family: $font-text;
+  overflow-x: hidden;
+}
+h1
+{
+  margin: 0;
 }
 ul
 {
