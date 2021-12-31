@@ -1,0 +1,21 @@
+%button
+{
+  display: block;
+  width: max-content;
+  padding: 20px;
+  border-radius: 39px;
+  text-decoration: none;
+  font-family: $font-title
+}
+
+.button
+{
+  &--contact
+  {
+    height: 58px;
+    @extend %button;
+    background-color: $yellow;
+    color: $color-title;
+    line-height: 18px;
+  }
+}

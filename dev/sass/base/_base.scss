@@ -1,0 +1,19 @@
+*
+{
+  box-sizing: border-box;
+}
+body
+{
+  font-size: 18px;
+  font-family: $font-text;
+}
+ul
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.uppercase
+{
+  text-transform: uppercase;
+}
