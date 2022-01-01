@@ -78,7 +78,7 @@
 .about
 {
   grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(3,500px);
+  grid-template-rows: repeat(3,minmax(max-content,500px));
 
   :nth-child(1)
   {
@@ -106,9 +106,9 @@
   }
   .item
   {
-    &__text
+    &--text
     {
-      .button
+      .button--learn
       {
         margin: 0;
       }

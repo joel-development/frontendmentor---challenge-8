@@ -13,6 +13,11 @@
     .social__icon
     {
       color: $color-footer;
+      transition: color .2s ease-in;
+    }
+    .social__icon:hover
+    {
+      color: $hover-color;
     }
   }
   &__logo
@@ -25,7 +30,6 @@
       fill: $color-footer;
     }
   }
-  
 }
 
 .f-menu
@@ -39,5 +43,10 @@
   {
     color: $color-footer;
     text-decoration: none;
+    transition: color .2s ease-in;
+  }
+  &__item:hover
+  {
+    color: $hover-color;
   }
 }

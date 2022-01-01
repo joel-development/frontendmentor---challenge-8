@@ -393,7 +393,7 @@ ul {
   text-transform: uppercase;
 }
 .button--learn:hover {
-  text-decoration: 4px underline var(--color-section);
+  text-decoration: 6px underline var(--color-section);
 }
 
 .top-bar {
@@ -485,6 +485,17 @@ ul {
   }
   .menu .button {
     background-color: #ffffff;
+    transition: color 0.2s ease-in;
+    transition: background-color 0.2s ease-in;
+  }
+}
+@media screen and (min-width: 860px) {
+  .menu .button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+  }
+  .menu__item:hover {
+    text-decoration: underline;
   }
 }
 .hero {
@@ -585,7 +596,7 @@ ul {
 @media screen and (min-width: 860px) {
   .about {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 500px);
+    grid-template-rows: repeat(3, minmax(max-content, 500px));
   }
   .about :nth-child(1) {
     order: 20;
@@ -605,7 +616,7 @@ ul {
   .about :nth-child(6) {
     order: 60;
   }
-  .about .item__text .button {
+  .about .item--text .button--learn {
     margin: 0;
   }
   .about .item--text-img, .about .item--text {
@@ -728,6 +739,10 @@ ul {
 }
 .footer__icons .social__icon {
   color: #25564b;
+  transition: color 0.2s ease-in;
+}
+.footer__icons .social__icon:hover {
+  color: #ffffff;
 }
 .footer__logo {
   display: block;
@@ -748,6 +763,10 @@ ul {
 .f-menu__item {
   color: #25564b;
   text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+.f-menu__item:hover {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
