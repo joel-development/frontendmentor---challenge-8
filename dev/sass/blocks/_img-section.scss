@@ -1,0 +1,147 @@
+.img-section
+{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 500px 1fr);
+  grid-auto-rows: 90vh;
+
+  .item
+  {
+    &__title
+    {
+      margin: 0;
+      font-weight: 900;
+      font-size: 35px;
+      font-family: $font-title;
+      color: $color-title;
+    }
+    &__text
+    {
+      line-height: 24px;
+      color: $color-text;
+    }
+    &--text
+    {
+      .button--learn
+      {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+    &--text-img,
+    &--text
+    {
+      padding: 75px;
+      text-align: center;
+    }
+    &--img
+    {
+      background-size: cover;
+      background-position: center;
+      &.--transform
+      {
+        background-image: url(../assets/images/mobile/image-transform.jpg);
+        
+      }
+      &.--stand-out
+      {
+        background-image: url(../assets/images/mobile/image-stand-out.jpg);
+      }
+      &-text
+      {
+        position: relative;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        
+        .text
+        {
+          position: absolute;
+          padding: 50px;
+          width: 100%;
+          bottom: 0;
+        }
+        &.--graphic-design
+        {
+          background-image: url(../assets/images/mobile/image-graphic-design.jpg);
+        }
+        &.--photography
+        {
+          background-image: url(../assets/images/mobile/image-photography.jpg);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 860px) {
+.img-section
+{
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(3,500px);
+
+  :nth-child(1)
+  {
+    order: 20;
+  }
+  :nth-child(2)
+  {
+    order: 10;
+  }
+  :nth-child(3)
+  {
+    order: 30;
+  }
+  :nth-child(4)
+  {
+    order: 40;
+  }
+  :nth-child(5)
+  {
+    order: 60;
+  }
+  :nth-child(6)
+  {
+    order: 60;
+  }
+  .item
+  {
+    &__text
+    {
+      .button
+      {
+        margin: 0;
+      }
+    }
+    &--text-img,
+    &--text
+    {
+      padding: 100px;
+      text-align: left;
+    }
+    &--img
+    {
+      &.--transform
+      {
+        background-image: url(../assets/images/desktop/image-transform.jpg);
+        
+      }
+      &.--stand-out
+      {
+        background-image: url(../assets/images/desktop/image-stand-out.jpg);
+      }
+      &-text
+      {
+        &.--graphic-design
+        {
+          background-image: url(../assets/images/desktop/image-graphic-design.jpg);
+        }
+        &.--photography
+        {
+          background-image: url(../assets/images/desktop/image-photography.jpg);
+        }
+      }
+    }
+  }
+}
+}

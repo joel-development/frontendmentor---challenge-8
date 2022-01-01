@@ -1,5 +1,13 @@
 :root {
-  --bg-section: $yellow;
+  --color-section: #fad400;
+}
+
+.--pomelo {
+  --color-section: #fe7867;
+}
+
+.--yellow {
+  --color-section: #fad400;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -365,10 +373,9 @@ ul {
   text-transform: uppercase;
 }
 
-.button--contact {
+.button--learn, .button--contact {
   display: block;
   width: max-content;
-  padding: 20px;
   border-radius: 39px;
   text-decoration: none;
   font-family: "Fraunces", serif;
@@ -376,9 +383,17 @@ ul {
 
 .button--contact {
   height: 58px;
+  padding: 20px;
   background-color: #fad400;
   color: #23303e;
   line-height: 18px;
+}
+.button--learn {
+  color: #23303e;
+  text-transform: uppercase;
+}
+.button--learn:hover {
+  text-decoration: 4px underline var(--color-section);
 }
 
 .top-bar {
@@ -511,6 +526,103 @@ ul {
 
   .arrow {
     bottom: 275px;
+  }
+}
+.img-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 500px 1fr);
+  grid-auto-rows: 90vh;
+}
+.img-section .item__title {
+  margin: 0;
+  font-weight: 900;
+  font-size: 35px;
+  font-family: "Fraunces", serif;
+  color: #23303e;
+}
+.img-section .item__text {
+  line-height: 24px;
+  color: #5a636c;
+}
+.img-section .item--text .button--learn {
+  margin-right: auto;
+  margin-left: auto;
+}
+.img-section .item--text-img, .img-section .item--text {
+  padding: 75px;
+  text-align: center;
+}
+.img-section .item--img {
+  background-size: cover;
+  background-position: center;
+}
+.img-section .item--img.--transform {
+  background-image: url(../assets/images/mobile/image-transform.jpg);
+}
+.img-section .item--img.--stand-out {
+  background-image: url(../assets/images/mobile/image-stand-out.jpg);
+}
+.img-section .item--img-text {
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+.img-section .item--img-text .text {
+  position: absolute;
+  padding: 50px;
+  width: 100%;
+  bottom: 0;
+}
+.img-section .item--img-text.--graphic-design {
+  background-image: url(../assets/images/mobile/image-graphic-design.jpg);
+}
+.img-section .item--img-text.--photography {
+  background-image: url(../assets/images/mobile/image-photography.jpg);
+}
+
+@media screen and (min-width: 860px) {
+  .img-section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 500px);
+  }
+  .img-section :nth-child(1) {
+    order: 20;
+  }
+  .img-section :nth-child(2) {
+    order: 10;
+  }
+  .img-section :nth-child(3) {
+    order: 30;
+  }
+  .img-section :nth-child(4) {
+    order: 40;
+  }
+  .img-section :nth-child(5) {
+    order: 60;
+  }
+  .img-section :nth-child(6) {
+    order: 60;
+  }
+  .img-section .item__text .button {
+    margin: 0;
+  }
+  .img-section .item--text-img, .img-section .item--text {
+    padding: 100px;
+    text-align: left;
+  }
+  .img-section .item--img.--transform {
+    background-image: url(../assets/images/desktop/image-transform.jpg);
+  }
+  .img-section .item--img.--stand-out {
+    background-image: url(../assets/images/desktop/image-stand-out.jpg);
+  }
+  .img-section .item--img-text.--graphic-design {
+    background-image: url(../assets/images/desktop/image-graphic-design.jpg);
+  }
+  .img-section .item--img-text.--photography {
+    background-image: url(../assets/images/desktop/image-photography.jpg);
   }
 }
 
