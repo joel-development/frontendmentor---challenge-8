@@ -1,0 +1,55 @@
+.testimonials
+{
+  padding: 50px;
+  &-title
+  {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $font-title;
+    color: $color-testimonials-title;
+  }
+}
+.testimonials-container
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial
+{
+  max-width: 100%;
+  width: 400px;
+  margin: 25px;
+  text-align: center;
+  &__name,
+  &__position
+  {
+    margin: 5px;
+  }
+  &__name
+  {
+    font-family: $font-title;
+    font-weight: 900;
+    font-size: 25px;
+    color: $color-title;
+  }
+  &__position
+  {
+    color: $color-testimonials-position;
+  }
+  &__text
+  {
+    color: $color-text;
+    line-height: $line-height;
+  }
+  &__profile-img 
+  {
+    padding: 25px;
+    img
+    {
+      width: 75px;
+      border-radius: 100%;
+    }
+  }
+}
