@@ -1,0 +1,43 @@
+.footer
+{
+  background-color: $bg-footer;
+  padding: 30px;
+  font-size: 25px;
+  &__icons
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 25px;
+    .social__icon
+    {
+      color: $color-footer;
+    }
+  }
+  &__logo
+  {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    path
+    {
+      fill: $color-footer;
+    }
+  }
+  
+}
+
+.f-menu
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px 0;
+  &__item
+  {
+    color: $color-footer;
+    text-decoration: none;
+  }
+}

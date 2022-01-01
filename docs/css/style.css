@@ -714,5 +714,40 @@ ul {
     background-image: url(../assets/images/desktop/image-gallery-sugar-cubes.jpg);
   }
 }
+.footer {
+  background-color: #458c7e;
+  padding: 30px;
+  font-size: 25px;
+}
+.footer__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  gap: 25px;
+}
+.footer__icons .social__icon {
+  color: #25564b;
+}
+.footer__logo {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.footer__logo path {
+  fill: #25564b;
+}
+
+.f-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px 0;
+}
+.f-menu__item {
+  color: #25564b;
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=style.css.map */
