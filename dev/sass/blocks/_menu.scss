@@ -1,6 +1,15 @@
+.header
+{
+  transition: .2s background-color ease-in;
+  &--scroll-bg
+  {
+    background-color: $bg-footer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+  }
+}
 .top-bar
 {
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 20;
 
@@ -39,6 +48,7 @@
   &--on
   {
     transform: translateY(0);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
   }
   
   ul
